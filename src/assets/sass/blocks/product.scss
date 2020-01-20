@@ -1,0 +1,138 @@
+.product {
+    max-width: 350px;
+    margin: 0 auto;
+    
+    box-shadow: 0px 0px 76px 0px rgba(231, 231, 231, 0.66);
+    background-color: $white;
+}
+
+.product__header {
+    display: flex;
+    height: 100%;
+}
+
+.product__header-left {
+    background-color: #fff;
+    width: 25%;
+
+    text-align: center;
+
+    li {
+        display: block;
+        margin-top: 2.5rem;
+    }
+}
+
+.product__header-btn {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.product__header-right {
+    width: 75%;
+
+    position: relative;
+}
+
+.product__label {
+    width: 50px;
+    height: 50px;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 50px;
+
+    border-radius: 50%;
+    background-color: #ccc;
+
+
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+
+    transform: translateX(-50%);
+
+    &--green {
+        background-color: $green;
+    }
+
+    &--pink {
+        background-color: $pink;
+    }
+
+    &--none {
+        display: none;
+    }
+}
+
+.product__main {
+    padding: 4rem 2.5rem 4rem;
+
+    text-align: center;
+}
+
+.product__title {
+    margin-bottom: 1rem;
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 2.3rem;
+
+    a {
+        color: inherit;
+    }
+}
+
+.product__price {
+    margin-bottom: 3.5rem;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $green;
+
+    del {
+        margin-right: 1rem;
+
+        color: #000;
+    }
+}
+
+.product__footer {
+    padding-top: 3.5rem;
+
+    border-top: 1px solid #eee;
+}
+
+.product__add {
+    padding: 0;
+    border: 0;
+    background: none;
+
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #000;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 27px;
+        height: 21px;
+        margin-right: 1rem;
+
+        background: url("../img/cart.png") 
+        no-repeat center;
+
+        position: relative;
+        top: -2px;
+    }
+}
