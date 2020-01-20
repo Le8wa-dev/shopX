@@ -1,0 +1,21 @@
+.search {
+
+}
+
+.search__input {
+    height: 16px;
+    padding-left: 3rem;
+
+    font-family: inherit;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #414141;
+    letter-spacing: 2px;
+
+    border: 0;
+    background: $white url("../img/search-icon.png") left center no-repeat;
+
+    &:focus {
+        outline: 0;
+    }
+}
