@@ -1,0 +1,76 @@
+// ** Footer__top
+
+.footer__top {
+    padding: 5.5rem 0;
+
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.footer__title {
+    margin-bottom: 3rem;
+
+    font-style: "Titillium Web", sans-serif;
+    font-size: 1.8rem;
+    color: #1d1e24;
+}
+
+.footer__title-icon {
+    margin-right: 0.5rem;
+
+    position: relative;
+    top: 2px;
+}
+
+.footer__logo {
+    margin-top: 4.5rem;
+}
+
+.footer__text {
+    margin: 1.5rem 0;
+    max-width: 31.5rem;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $light-gray;
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $light-gray;
+
+    a {
+        color: inherit;
+
+        &::after {
+            left: -1.5rem;
+            right: auto;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__list-item {
+    width: 50%;
+    margin-bottom: 1.2rem;
+}
+
+// ** Footer__bottom
+
+.footer__bottom {
+    padding: 1.5rem 0;
+
+    font-size: 1.3rem;
+    color: $light-gray;
+}

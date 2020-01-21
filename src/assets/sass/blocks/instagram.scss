@@ -1,0 +1,10 @@
+.instagram {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.instagram__item {
+    margin: 0 2px;
+    width: 23%;
+}

@@ -1,0 +1,48 @@
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits__item {
+    width: 25%;
+    padding: 4.5rem 1.5rem;
+
+    &:nth-child(odd) {
+        background-color: #1d1e24;
+    }
+
+    &:nth-child(even) {
+        background-color: #202127;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.benefits__icon {
+    min-height: 11rem;
+}
+
+.benefits__title {
+    margin-bottom: 1rem;
+
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.benefits__text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #767676;
+    text-align: center;
+}

@@ -2,3 +2,28 @@
     display: block;
     max-width: 100%;
 }
+
+.link-more {
+    color: #7b7c85;
+
+    position: relative;
+
+    &::after {
+        content: "" ;
+        width: 8px;
+        height: 8px;
+
+        position: absolute;
+        top: 50%;
+        right: -1rem;
+        z-index: 1;
+
+        transform: translateY(-50%);
+
+        background: url("../img/icons/right-arrow.svg") center no-repeat;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
