@@ -15,7 +15,7 @@
     font-size: 2.3rem;
     font-weight: 100;
     text-transform: uppercase;
-    color: #000;
+    color: $black;
     line-height: 1.1;
 
     span {
@@ -44,8 +44,8 @@
 
 .slider__link {
     font-size: 1.6rem;
-    font-weight: 300;
-    color: #000;
+    font-weight: 700;
+    color: $black;
     text-transform: uppercase;
     text-decoration: underline;
 
