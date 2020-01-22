@@ -21,4 +21,8 @@
 
 .filter__nav-item + .filter__nav-item {
     margin-left: 1rem;
+
+    @include media-breakpoint-down(xs) {
+        margin-left: .8rem;
+    }
 }

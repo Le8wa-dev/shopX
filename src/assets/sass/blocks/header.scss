@@ -2,6 +2,18 @@
     padding: 4.5rem 0 3.5rem;
 
     border-bottom: 1px solid #f1f1f1;
+
+    @include media-breakpoint-down(md) {
+        padding: 1rem 0;
+    }
+}
+
+.header__logo {
+    margin: 0 auto;
+
+    @include media-breakpoint-down(xs) {
+        margin: 1rem auto;
+    }
 }
 
 .header__menu {

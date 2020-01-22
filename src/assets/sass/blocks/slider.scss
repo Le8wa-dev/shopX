@@ -4,6 +4,10 @@
     min-height: 575px;
 
     background-color: #ade1c5;
+
+    @include media-breakpoint-down(xs) {
+        min-height: 400px;
+    }
 }
 
 .slider__item {
@@ -23,6 +27,14 @@
         text-transform: none;
         font-size: 7.3rem;
     }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 1.5rem;
+
+        span {
+            font-size: 5rem;
+        }
+    }
 }
 
 .slider__title {
@@ -40,6 +52,15 @@
         position: relative;
         top: -8px;
     }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 5rem;
+
+        sup {
+            font-size: 1.5rem;
+            padding-right: 1rem;
+        }
+    }
 }
 
 .slider__link {
@@ -52,4 +73,9 @@
     &:hover {
         text-decoration: none;
     }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 1.2rem;
+    }
 }
+

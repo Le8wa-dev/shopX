@@ -12,6 +12,10 @@
     font-style: "Titillium Web", sans-serif;
     font-size: 1.8rem;
     color: #1d1e24;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 1rem;
+    }
 }
 
 .footer__title-icon {
@@ -64,6 +68,10 @@
 .footer__list-item {
     width: 50%;
     margin-bottom: 1.2rem;
+
+    @include media-breakpoint-down(md) {
+        padding-left: 1.5rem;
+    }
 }
 
 // ** Footer__bottom

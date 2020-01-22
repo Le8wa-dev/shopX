@@ -4,6 +4,14 @@
     text-align: center;
     font-size: 1.1rem;
     text-transform: uppercase;
+
+    @include media-breakpoint-down(xs) {
+        ul,
+        li{
+            display: block;
+        }
+    }
+
 }
 
 .nav__link {
@@ -19,5 +27,11 @@
     &.active {
         text-decoration: underline;
         color: #b0decc;
+    }
+
+    @include media-breakpoint-down(xs) {
+        display: block;
+        margin: 0;
+        padding: .5rem 0;
     }
 }
